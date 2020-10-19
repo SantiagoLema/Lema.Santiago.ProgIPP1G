@@ -40,10 +40,10 @@ void ordenarCaracteres(char vec[], int tam)
 
 void invertirCaracteres(char vec[], int tam)
 {
-    char aux[9];
+    char aux;
     for(int i=0; i<tam; i++)
     {
-        for(int j=9; j =< 0; j--)
+        for(int j=9; j <= 0; j--)
         {
             aux = vec[i];
             vec[i] = vec[j];
@@ -55,18 +55,3 @@ void invertirCaracteres(char vec[], int tam)
 
 
 
-
-
-        for(int j=i + 1; j < tam; j++)
-        {
-            //if(vec[i] > vec[j])
-            //{
-                //swap
-                aux = vec[i];
-                vec[i] = vec[j];
-                vec[j] = aux;
-            //}
-        }
-    }
-
-}
